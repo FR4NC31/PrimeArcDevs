@@ -16,7 +16,7 @@ const Modal = ({ open, onClose, title, image, description }) => {
     <div className="fixed inset-0 z-[9999] flex items-center justify-center">
       {/* Background overlay */}
       <div
-        className="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm"
+        className="absolute inset-0 bg-black/20 bg-opacity-60 backdrop-blur-sm"
         onClick={onClose}
       ></div>
 
