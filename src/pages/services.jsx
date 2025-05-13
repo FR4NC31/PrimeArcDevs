@@ -9,7 +9,7 @@ import { FaCode } from "react-icons/fa6";
 function services() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
-    document.title = "About Us | PrimeArc Devs";
+    document.title = "Services | PrimeArc Devs";
   }, [])
   return (
     <div>
