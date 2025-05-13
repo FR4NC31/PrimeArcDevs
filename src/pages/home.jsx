@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 //Components
 import Navbar from '../components/navbar'
@@ -8,6 +9,10 @@ import Platform from '../components/platform'
 import Devs from "../assets/images/developers 1.png"
 
 function home() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+      document.title = "Home | PrimeArc Devs";
+    }, [])
   return (
     <div>
         <Navbar />

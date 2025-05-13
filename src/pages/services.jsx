@@ -1,4 +1,5 @@
 import Navbar from '../components/navbar'
+import { useEffect } from 'react';
 
 //Icons
 import { BiCodeBlock } from "react-icons/bi";
@@ -6,6 +7,10 @@ import { IoPhonePortraitOutline } from "react-icons/io5";
 import { FaCode } from "react-icons/fa6";
 
 function services() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    document.title = "About Us | PrimeArc Devs";
+  }, [])
   return (
     <div>
       <Navbar />

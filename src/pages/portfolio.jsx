@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../components/navbar'
 import { FaFolderOpen } from 'react-icons/fa'
 
 function portfolio() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+      document.title = "Portfolio | PrimeArc Devs";
+    }, [])
   return (
     <div>
       <Navbar />

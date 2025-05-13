@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../components/navbar'
 import Contact_Info from '../components/contact_info'
 import { Link } from 'react-router-dom'
@@ -9,7 +9,12 @@ import { FaTiktok } from "react-icons/fa"
 import { RiInstagramFill } from "react-icons/ri"
 
 function contact() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    document.title = "Contact | PrimeArc Devs";
+  }, [])
   return (
+    
     <div>
       <Navbar />
       <main className="min-h-screen flex justify-center items-center bg-white px-6 md:px-20">

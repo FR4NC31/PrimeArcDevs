@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Components
 import Navbar from '../components/navbar';
@@ -13,6 +13,7 @@ const Modal = ({ open, onClose, title, image, description }) => {
   if (!open) return null;
 
   return (
+    
     <div className="fixed inset-0 z-[9999] flex items-center justify-center">
       {/* Background overlay */}
       <div
@@ -47,6 +48,9 @@ const Modal = ({ open, onClose, title, image, description }) => {
 };
 
 function About() {
+  useEffect(() => {
+    document.title = "About Us | PrimeArc Devs";
+  }, [])
   const [selectedModal, setSelectedModal] = useState(null);
 
   const people = {
@@ -71,6 +75,7 @@ function About() {
   };
 
   return (
+    
     <div>
       <Navbar />
       <main className="flex flex-col justify-center items-center mt-20">
