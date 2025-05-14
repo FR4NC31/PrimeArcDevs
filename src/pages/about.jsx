@@ -58,13 +58,13 @@ function About() {
       title: "Francis Edgard Ibañez",
       image: FR4NC,
       description:
-        "Role: UI/UX Designer & Front-End Developer\nTech Stack: HTML, CSS, JavaScript, React, Vite, NextJS, React Native, Tailwind",
+        "Role: UI/UX Designer & Front-End Developer\nTech Stack: HTML, CSS, JavaScript, React, Vite, React Native, Tailwind",
     },
     rachelle: {
       title: "Rachelle Pantinople",
       image: Rachelle,
       description:
-        "Role: Front-End Developer\nTech Stack: HTML, CSS, JavaScript, React, React Native",
+        "Role: Front-End Developer\nTech Stack: HTML, CSS, JavaScript, React, Vite, Tailwind React Native",
     },
     jhanra: {
       title: "Jhanra Ordoviz",
