@@ -78,7 +78,7 @@ function About() {
     
     <div>
       <Navbar />
-      <main className="flex flex-col justify-center items-center mt-20">
+      <main className="flex flex-col justify-center items-center mt-40">
         <h1 className="text-7xl font-bold font-audiowide text-black">
           Who <span className="text-violet-500">We Are</span>
         </h1>
