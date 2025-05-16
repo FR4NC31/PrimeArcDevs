@@ -16,7 +16,7 @@ function Contact() {
   return (
     <div>
       <Navbar />
-      <main className="min-h-screen flex justify-center items-center bg-white px-6 md:px-20 mt-32">
+      <main className="min-h-screen flex justify-center items-center bg-white px-6 md:px-20 mt-32 md:mt-0">
         <div className="max-w-7xl w-full flex flex-col md:flex-row justify-between items-center gap-16">
           {/* Left Content */}
           <div className="flex flex-col items-start justify-center gap-6 max-w-xl">
