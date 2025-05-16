@@ -1,7 +1,7 @@
-import React from 'react'
-import { FaChevronDown } from 'react-icons/fa'
+import React from 'react';
+import { FaChevronDown } from 'react-icons/fa';
 
-function contact_info() {
+function ContactInfo() {
   return (
     <div className='w-full max-w-md shadow-xl flex flex-col justify-center rounded-2xl items-center bg-violet-500 p-8'>
       <form className='w-full flex flex-col gap-5'>
@@ -10,6 +10,7 @@ function contact_info() {
           <input
             type="text"
             className='w-full h-12 font-poppins rounded-full pl-5 bg-white mt-1'
+            required
           />
         </div>
 
@@ -18,6 +19,7 @@ function contact_info() {
           <input
             type="email"
             className='w-full h-12 font-poppins rounded-full pl-5 bg-white mt-1'
+            required
           />
         </div>
 
@@ -26,6 +28,7 @@ function contact_info() {
           <select
             className='w-full h-12 font-poppins rounded-full pl-5 pr-10 mt-1 appearance-none bg-white outline-none'
             defaultValue=""
+            required
           >
             <option value="" disabled>Choose project type</option>
             <option value="mobile">Mobile Application</option>
@@ -42,6 +45,7 @@ function contact_info() {
             rows="4"
             className='w-full font-poppins rounded-2xl p-4 bg-white mt-1 resize-none'
             placeholder="Write your message here..."
+            required
           />
         </div>
 
@@ -53,7 +57,7 @@ function contact_info() {
         </button>
       </form>
     </div>
-  )
+  );
 }
 
-export default contact_info
+export default ContactInfo;
