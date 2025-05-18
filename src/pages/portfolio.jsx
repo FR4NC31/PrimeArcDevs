@@ -11,7 +11,7 @@ function Portfolio() {
     <div>
       <Navbar />
 
-      <main className="flex flex-col items-center justify-center min-h-screen px-4 py-20">
+      <main className="flex flex-col items-center justify-center min-h-screen px-4 py-20 mb-20 md:mb-0">
         <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg p-6 sm:p-10 max-w-2xl w-full text-center">
           <FaFolderOpen className="w-16 h-16 sm:w-20 sm:h-20 text-violet-500" />
           <h1 className="text-2xl sm:text-4xl font-bold mt-5">Portfolio</h1>

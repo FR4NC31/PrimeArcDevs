@@ -17,7 +17,7 @@ function Home() {
     <div>
       <Navbar />
 
-      <main className='flex flex-col items-center justify-center px-4 mt-40'>
+      <main className='flex flex-col items-center justify-center px-4 mt-40 mb-20 md:mb-0'>
         {/* Heading Section */}
         <div className='text-center'>
           <h1 className='text-5xl md:text-7xl lg:text-8xl font-bold font-audiowide text-violet-500 flex flex-col md:flex-row justify-center items-center gap-2'>

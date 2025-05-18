@@ -14,7 +14,7 @@ function Services() {
   return (
     <div>
       <Navbar />
-      <main className="flex flex-col justify-center items-center mt-32 px-4 sm:px-10">
+      <main className="flex flex-col justify-center items-center mt-32 px-4 sm:px-10 mb-20 md:mb-0">
         {/* Title */}
         <h1 className="text-4xl sm:text-6xl font-bold font-audiowide text-black text-center">
           Our <span className="text-violet-500">Services</span>
@@ -24,17 +24,17 @@ function Services() {
         <div className="mt-16 w-full max-w-7xl flex flex-wrap justify-center gap-10">
           {/* Service Card */}
           {[{
-            icon: <BiCodeBlock className="w-20 h-20 mx-auto text-white bg-violet-500 rounded-full p-4 mb-4" />,
+            icon: <BiCodeBlock className="w-20 h-20 mx-auto border-4 text-white bg-violet-500 rounded-full p-4 mb-4" />,
             title: "Web App Development",
             description: `We design and develop modern, responsive websites that help your business stand out online.
               Our tech stack includes HTML, CSS, JavaScript, React, PHP, and MongoDB.`
           }, {
-            icon: <IoPhonePortraitOutline className="w-20 h-20 mx-auto text-white bg-violet-500 rounded-full p-3 mb-4" />,
+            icon: <IoPhonePortraitOutline className="w-20 h-20 mx-auto border-4 text-white bg-violet-500 rounded-full p-3 mb-4" />,
             title: "Mobile App Development",
             description: `Bring your ideas to life with scalable, user-friendly mobile apps for Android.
               We use React Native and Firebase.`
           }, {
-            icon: <FaCode className="w-20 h-20 mx-auto text-white bg-violet-500 rounded-full p-4 mb-4" />,
+            icon: <FaCode className="w-20 h-20 mx-auto border-4 text-white bg-violet-500 rounded-full p-4 mb-4" />,
             title: "Static Websites",
             description: `Simple yet elegant designs that leave a lasting impression.
               We use HTML, CSS, and JavaScript.`
