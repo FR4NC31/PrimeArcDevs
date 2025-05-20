@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Logo from "../assets/images/logo.png";
 
+// Active link style
 const linkClasses = ({ isActive }) =>
   isActive ? 'text-violet-500 font-semibold' : 'text-black';
 
@@ -16,15 +17,15 @@ function Navbar() {
         <img src={Logo} alt="Logo" className='w-32' />
       </div>
 
-      {/* Hamburger Icon - Mobile */}
-      <div className='md:hidden'>
+      {/* Hamburger Icon - visible only below 920px */}
+      <div className='block [@media(min-width:920px)]:hidden'>
         <button onClick={() => setMenuOpen(true)} className='focus:outline-none'>
           <Menu size={28} />
         </button>
       </div>
 
-      {/* Desktop Nav */}
-      <ul className='hidden md:flex items-center gap-10 font-poppins text-xl'>
+      {/* Desktop Nav - visible only at 920px and above */}
+      <ul className='hidden [@media(min-width:920px)]:flex items-center gap-10 font-poppins text-xl pr-10'>
         <li><NavLink to="/" className={linkClasses}>Home</NavLink></li>
         <li><NavLink to="/about" className={linkClasses}>About</NavLink></li>
         <li><NavLink to="/services" className={linkClasses}>Services</NavLink></li>
@@ -34,15 +35,14 @@ function Navbar() {
 
       {/* Blurred Backdrop Overlay */}
       <div
-        className={`fixed inset-0 backdrop-blur-sm bg-white/30 transition-opacity duration-300 ${
-          menuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-        } md:hidden`}
+        className={`fixed inset-0 backdrop-blur-sm bg-white/30 transition-opacity duration-300
+          ${menuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'} [@media(min-width:920px)]:hidden`}
         onClick={() => setMenuOpen(false)}
       ></div>
 
-      {/* Sidebar Menu (Mobile - Left Side) */}
+      {/* Sidebar Menu (Mobile) */}
       <div className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out
-        ${menuOpen ? 'translate-x-0' : '-translate-x-full'} md:hidden`}>
+        ${menuOpen ? 'translate-x-0' : '-translate-x-full'} [@media(min-width:920px)]:hidden`}>
         
         <div className='flex items-center justify-between p-4 border-b'>
           <img src={Logo} alt="Logo" className='w-28' />

@@ -38,7 +38,7 @@ function Contact() {
               <Link to="https://www.tiktok.com/@qwerty_dev?is_from_webapp=1&sender_device=pc" target="_blank">
                 <FaTiktok className="hover:text-violet-500 cursor-pointer" />
               </Link>
-              <Link to="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+              <Link to="https://www.instagram.com/primearcdevs/" target="_blank">
                 <RiInstagramFill className="hover:text-violet-500 cursor-pointer" />
               </Link>
             </div>
