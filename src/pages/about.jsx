@@ -8,39 +8,56 @@ import Jhanra from "../assets/images/jhanra.jpg";
 
 // Modal Component
 const Modal = ({ open, onClose, title, image, description }) => {
-  if (!open) return null;
+  const isVisible = open && title && image && description;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center px-4">
+    <div
+      className={`fixed inset-0 z-[9999] flex items-center justify-center px-4 transition-all duration-300 ease-in-out ${
+        open ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-90 pointer-events-none'
+      }`}
+    >
+      {/* Animated backdrop */}
       <div
-        className="absolute inset-0 bg-black/20 bg-opacity-60 backdrop-blur-sm"
+        className={`absolute inset-0 transition-all duration-300 ease-in-out ${
+          open ? 'bg-black/20 backdrop-blur-sm' : 'bg-black/0 backdrop-blur-0'
+        }`}
         onClick={onClose}
-      ></div>
+      />a
 
-      <div className="relative z-10 bg-white rounded-2xl p-6 w-full max-w-xl shadow-2xl">
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-6 text-gray-500 hover:text-red-500 text-3xl font-bold"
-        >
-          &times;
-        </button>
-        <div className="flex flex-col items-center mt-4">
-          <img
-            src={image}
-            alt={title}
-            className="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-violet-500 mb-4 object-cover"
-          />
-          <h2 className="text-xl sm:text-2xl font-bold text-center font-poppins">{title}</h2>
-          <div className="text-base text-center mt-4 text-violet-600 px-2 sm:px-4 space-y-2 font-poppins">
-            {description.split('\n').map((line, idx) => (
-              <p key={idx}>{line}</p>
-            ))}
-          </div>
-        </div>
+      {/* Modal box */}
+      <div
+        className={`relative z-10 bg-white rounded-2xl p-6 w-full max-w-xl shadow-2xl transition-all duration-300 ease-in-out transform ${
+          open ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+        }`}
+      >
+        {isVisible && (
+          <>
+            <button
+              onClick={onClose}
+              className="absolute top-4 right-6 text-gray-500 hover:text-red-500 text-3xl font-bold"
+            >
+              &times;
+            </button>
+            <div className="flex flex-col items-center mt-4">
+              <img
+                src={image}
+                alt={title}
+                className="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-violet-500 mb-4 object-cover"
+              />
+              <h2 className="text-xl sm:text-2xl font-bold text-center font-poppins">{title}</h2>
+              <div className="text-base text-center mt-4 text-violet-600 px-2 sm:px-4 space-y-2 font-poppins">
+                {(description ?? "").split('\n').map((line, idx) => (
+                  <p key={idx}>{line}</p>
+                ))}
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
 };
+
 
 function About() {
   useEffect(() => {
