@@ -4,7 +4,7 @@ import Contact_Info from '../components/contact_info';
 import { Link } from 'react-router-dom';
 
 // Icons
-import { CiFacebook } from "react-icons/ci";
+import { FaFacebook } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 
@@ -31,12 +31,12 @@ function Contact() {
             </p>
 
             {/* Social Icons */}
-            <div className="flex gap-5 text-2xl text-black">
+            <div className="flex gap-15 text-4xl text-black">
               <Link to="https://www.facebook.com/profile.php?id=61571649790817" target="_blank">
-                <CiFacebook className="hover:text-violet-500 cursor-pointer" />
+                <FaFacebook className="hover:text-violet-500 cursor-pointer" />
               </Link>
               <Link to="https://www.tiktok.com/@qwerty_dev?is_from_webapp=1&sender_device=pc" target="_blank">
-                <FaTiktok className="hover:text-violet-500 cursor-pointer" />
+                <FaTiktok className="hover:text-violet-500 cursor-pointer"/>
               </Link>
               <Link to="https://www.instagram.com/primearcdevs/" target="_blank">
                 <RiInstagramFill className="hover:text-violet-500 cursor-pointer" />
