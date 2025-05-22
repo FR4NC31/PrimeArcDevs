@@ -9,7 +9,6 @@ function ContactInfo() {
           <label className='font-poppins text-white'>Name</label>
           <input
             type="text"
-            placeholder='John Doe'
             className='w-full h-12 font-poppins rounded-full pl-5 bg-white mt-1'
             required
           />
@@ -19,7 +18,6 @@ function ContactInfo() {
           <label className='font-poppins text-white'>Email</label>
           <input
             type="email"
-            placeholder='example@gmail.com'
             className='w-full h-12 font-poppins rounded-full pl-5 bg-white mt-1'
             required
           />

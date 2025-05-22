@@ -11,7 +11,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className='fixed top-0 left-0 w-full z-50 shadow-lg bg-white px-4 py-3 flex items-center justify-between'>
+    <div className='fixed top-0 left-0 w-full z-50 shadow-lg h-25 bg-white px-4 py-3 flex items-center justify-between'>
       {/* Logo */}
       <div className='flex items-center'>
         <img src={Logo} alt="Logo" className='w-32' />
