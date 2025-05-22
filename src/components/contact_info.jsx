@@ -3,7 +3,7 @@ import { FaChevronDown } from 'react-icons/fa';
 
 function ContactInfo() {
   return (
-    <div className='w-full max-w-md shadow-xl flex flex-col justify-center rounded-2xl items-center bg-violet-500 p-8'>
+    <div className='w-full max-w-md shadow-xl md:mt-20 flex flex-col justify-center rounded-2xl items-center bg-violet-500 p-8'>
       <form className='w-full flex flex-col gap-5'>
         <div>
           <label className='font-poppins text-white'>Name</label>
