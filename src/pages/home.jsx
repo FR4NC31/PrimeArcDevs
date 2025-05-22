@@ -17,10 +17,10 @@ function Home() {
     <div>
       <Navbar />
 
-      <main className='flex flex-col items-center justify-center px-4 mt-40 mb-20 md:mb-20'>
+      <main className='flex flex-col items-center justify-center px-4 mt-60 mb-20 md:mb-20'>
         {/* Heading Section */}
         <div className='text-center'>
-          <h1 className='text-5xl md:text-7xl lg:text-8xl font-bold font-audiowide text-violet-500 flex flex-col md:flex-row justify-center items-center gap-2'>
+          <h1 className='text-5xl md:text-7xl lg:text-7xl font-bold font-audiowide text-violet-500 flex flex-col md:flex-row justify-center items-center gap-2'>
             PrimeArc <span className='text-black'>Devs</span>
           </h1>
           <p className='text-xl md:text-2xl font-poppins mt-4 max-w-3xl mx-auto'>
